@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(8, 8, 150);
+}
+.welcome_text {
+  width: 400px;
+}
+
+.welcome_form input,
+.welcome_form button {
+  display: block;
+  width: 100%;
+}
+.welcome_form input:focus,
+.welcome_form button:focus {
+  outline: none;
+}
+
+.welcome_form input {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 4px 10px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.welcome_form button {
+  padding: 12px 0;
+  font-size: 22px;
+  border: none;
+  border-radius: 50px;
+  color: rgb(8, 8, 150);
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+.welcome_form button:hover {
+  transform: translateY(-4px);
+}
+
+.quiz {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: 60px auto;
+}
+.quiz_header {
+  background-color: white;
+  box-shadow: 0px 2px 7px 3px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.quiz_body {
+  background-color: rgb(245, 230, 230);
+  padding: 30px;
+}
+
+.quiz_user {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.counterPoint {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: large;
+  color: rgb(8, 8, 150);
+  float: right;
+}
+
+.quiz_timer {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  background-color: rgb(8, 8, 150);
+  color: white;
+}
+
+.option_group {
+  list-style: none;
+  margin: 30px 0px;
+}
+
+.option {
+  background-color: white;
+  width: 320px;
+  margin: 20px;
+  padding: 15px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid transparent;
+}
+option2 {
+  background-color: green;
+}
+.option:hover {
+  border: 2px solid rgb(8, 8, 150);
+  cursor: pointer;
+  color: rgb(8, 8, 150);
+}
+
+.btn-next {
+  background-color: rgb(8, 8, 150);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 10px;
+  border: 2px solid transparent;
+  transition: 1s ease;
+  box-shadow: 0px 0px 5px 1px rgb(8, 8, 150);
+}
+.btn-next:focus {
+  outline: none;
+}
+.btn-next:hover {
+  background-color: rgb(245, 230, 230);
+  color: rgb(8, 8, 150);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 2px solid rgb(8, 8, 150);
+  box-shadow: 0px 0px 5px 1px rgb(8, 8, 150);
+}
+.bottomDiv {
+  display: flex;
+  align-items: center;
+}
+.correctAnswer {
+  margin-left: 30px;
+  font-size: larger;
+  color: green;
+  padding: 12px 30px;
+}
